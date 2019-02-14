@@ -10,11 +10,11 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1>مشترک محتویات ذهنم شوید.</h1>
     <p>دست نوشته ها و خاطرات معین علیزاده</p>
-    <p>Go Online</p>
+    <p>به نام خدا، داستان به زودی آغاز می گردد.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to NEXT page</Link>
+    <Link to="/page-2/">رفتن به صفحه بعدی</Link>
   </Layout>
 )
 
