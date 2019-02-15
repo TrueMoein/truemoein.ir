@@ -1,12 +1,16 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const PostBox = (props) => {
-    return (
-        <div>
-            <h4>This is the post box</h4>
-            {props.children}
-        </div>
-    )
+const PostBox = ({ children, title }) => {
+  return (
+    <div>
+      <h4>{title}</h4>
+      {children}
+    </div>
+  )
 }
 
+PostBox.propTypes = {
+  title: PropTypes.string.isRequired,
+}
 export default PostBox
