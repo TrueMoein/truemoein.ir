@@ -6,7 +6,6 @@ import PostBox from "../components/templates/posts/Box"
 import SEO from "../components/seo"
 
 const IndexPage = (props) => {
-  console.log(props);
   const {data: {allMarkdownRemark: {edges: posts}}} = props;
   return (
     <Layout>
