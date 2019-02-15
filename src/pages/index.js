@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/templates/layout/layout'
 import PostBox from '../components/templates/posts/Box'
-import SEO from '../components/seo'
+import SEO from '../components/templates/layout/seo'
 
 const IndexPage = props => {
   const {
