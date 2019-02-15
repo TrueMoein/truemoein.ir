@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => (
+const Layout = ({children}) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            Designed and Developed by <a href="https://github.com/TrueMoein" target="_blank">Moein Alizadeh</a>
+            Designed and Developed by <a href="https://github.com/TrueMoein" target="_blank" rel="noopener noreferrer">Moein Alizadeh</a>
           </footer>
         </div>
       </>

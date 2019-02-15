@@ -1,21 +1,40 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import PostBox from "../components/templates/posts/Box"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>مشترک محتویات ذهنم شوید.</h1>
-    <p>دست نوشته ها و خاطرات معین علیزاده</p>
-    <p>به نام خدا، داستان به زودی آغاز می گردد.</p>
+const IndexPage = (props) => {
+  console.log(props);
+  const {data: {allMarkdownRemark: {edges: posts}}} = props;
+  return (
+    <Layout>
+      <SEO title="صفحه اصلی" keywords={[`gatsby`, `application`, `react`]} />
+      {
+        posts.map(post => <PostBox key={post.node.id}>{post.node.excerpt}</PostBox>)
+      }
+    </Layout>
+  )
+}
 
-    <iframe src="https://castbox.fm/app/castbox/player/id2001592?v=4.0.30&autoplay=0" frameborder="0" width="100%" height="500"></iframe>
-
-    <Link to="/page-2/">رفتن به صفحه بعدی</Link>
-  </Layout>
-)
+export const query = graphql`
+query {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        html
+        frontmatter {
+          title
+          category
+          tags
+        }
+        excerpt
+      }
+    }
+  }
+}
+`
 
 export default IndexPage
