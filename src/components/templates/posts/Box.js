@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const PostBox = ({ children, title }) => {
   return (
-    <div>
+    <div className="post-box">
       <h4>{title}</h4>
       {children}
     </div>

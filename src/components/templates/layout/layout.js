@@ -18,9 +18,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="row">
-          <main className="col-md-6">{children}</main>
-        </div>
+        <main>{children}</main>
       </>
     )}
   />
