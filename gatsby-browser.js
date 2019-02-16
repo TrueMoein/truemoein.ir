@@ -6,5 +6,4 @@
 
 // You can delete this file if you're not using it
 
-import './src/assets/css/flexbox-grid.css'
 import './src/assets/css/layout.css'
