@@ -1,14 +1,14 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import logo from '../../../assets/images/TrueMoein.png'
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      <p>
-        <Link to="/">{siteTitle}</Link>
-      </p>
-    </div>
+    <span>Moein Alizadeh</span>
+    <Link to="/">
+      <img src={logo} alt={siteTitle} />
+    </Link>
   </header>
 )
 
