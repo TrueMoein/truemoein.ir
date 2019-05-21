@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+}
+
+code {
+    background: #e4f2ff;
+    padding: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 0px #a2d1ff;
+}
+
+.flex-container {
+    display: flex;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.flex-item {
+    padding: 15px;
+    background-color: azure;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.color_blue {
+    background-color: #178dff;
+    border: solid 3px #2e5aa9;
+}
+
+.column-direction {
+    flex-direction: column;
+}
