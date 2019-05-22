@@ -5,10 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Flex box - Exercise by Moein Alizadeh</title>
+    <title>CSS Flexbox - Exercise by Moein Alizadeh</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <h1>Container</h1>
+    <hr>
     <h4>A normal div container without any position and display formatting</h4>
     <div class="color_blue">
         <div class="flex-item">1</div>
@@ -45,7 +47,7 @@
 
     <hr>
 
-    <h4>Flex container with <code>flex-direction: row;</code></h4>
+    <h4>Flex container with <code>flex-direction: row;</code> <i class="default-label">[default]</i></h4>
     <div class="color_blue flex-container row-direction">
         <div class="flex-item">1</div>
         <div class="flex-item">2</div>
@@ -80,17 +82,11 @@
         <div class="flex-item">13</div>
         <div class="flex-item">14</div>
         <div class="flex-item">15</div>
-        <div class="flex-item">16</div>
-        <div class="flex-item">17</div>
-        <div class="flex-item">18</div>
-        <div class="flex-item">19</div>
-        <div class="flex-item">20</div>
-        <div class="flex-item">21</div>
     </div>
 
     <hr>
 
-    <h4>Flex container with <code>flex-wrap: nowrap;</code></h4>
+    <h4>Flex container with <code>flex-wrap: nowrap;</code> <i class="default-label">[default]</i></h4>
     <div class="color_blue flex-container flex-nowrap">
         <div class="flex-item">1</div>
         <div class="flex-item">2</div>
@@ -107,12 +103,351 @@
         <div class="flex-item">13</div>
         <div class="flex-item">14</div>
         <div class="flex-item">15</div>
-        <div class="flex-item">16</div>
-        <div class="flex-item">17</div>
-        <div class="flex-item">18</div>
-        <div class="flex-item">19</div>
-        <div class="flex-item">20</div>
-        <div class="flex-item">21</div>
     </div>
+
+    <hr>
+
+    <h4>Flex container with <code>flex-wrap: wrap-reverse;</code></h4>
+    <div class="color_blue flex-container flex-wrap-reverse">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+        <div class="flex-item">15</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>flex-flow: row wrap;</code> with <code>flex-flow</code> we can set both <code>flex-direction</code> and <code>flex-wrap</code> <i class="default-label">[default]</i></h4>
+    <div class="color_blue flex-container row-wrap-flow">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+        <div class="flex-item">15</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>justify-content: start;</code> <i class="default-label">[default]</i></h4>
+    <div class="color_blue flex-container justify-start">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>justify-content: end;</code></h4>
+    <div class="color_blue flex-container justify-end">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>justify-content: space-around;</code></h4>
+    <div class="color_blue flex-container space-around">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>justify-content: space-between;</code></h4>
+    <div class="color_blue flex-container space-between">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>align-items: center;</code></h4>
+    <div class="color_blue flex-container height-200 align-center">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+
+    <h4>Flex container with <code>align-items: flex-start;</code></h4>
+    <div class="color_blue flex-container height-200 align-start">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-items: flex-end;</code></h4>
+    <div class="color_blue flex-container height-200 align-end">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-items: stretch;</code> <i class="default-label">default</i></h4>
+    <div class="color_blue flex-container height-200 align-stretch">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-items: baseline;</code></h4>
+    <div class="color_blue flex-container height-200 align-baseline">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: space-between;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-space-between flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+        <div class="flex-item">15</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: space-around;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-space-around flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+        <div class="flex-item">15</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: stretch;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-stretch flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: center;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-center flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: flex-start;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-start flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: flex-end;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-end flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+
+    <hr>
+
+    <h4>Flex container with <code>justify-content: center;</code> <code>align-items: center;</code></h4>
+    <div class="color_blue flex-container height-200 full-center">
+        <div class="flex-item">1</div>
+    </div>
+
+
+    <hr>
+
+    <h4>Flex container with <code>align-content: flex-end;</code> <code>flex-wrap: wrap;</code></h4>
+    <div class="color_blue flex-container height-200 align-content-end flex-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+    <h1>Items</h1>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>order</code> property</h4>
+    <div class="color_blue flex-container">
+        <div class="flex-item" style="order: 2">1 <small>(2)</small></div>
+        <div class="flex-item" style="order: 3">2 <small>(3)</small></div>
+        <div class="flex-item" style="order: 1">3 <small>(1)</small></div>
+        <div class="flex-item" style="order: 0">4 <small>(0)</small></div>
+        <div class="flex-item" style="order: 0">5 <small>(0)</small></div>
+    </div>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>flex-grow</code> property</h4>
+    <div class="color_blue flex-container">
+        <div class="flex-item" style="flex-grow: 2">1 <small>(2)</small></div>
+        <div class="flex-item" style="flex-grow: 2">2 <small>(2)</small></div>
+        <div class="flex-item" style="flex-grow: 6">3 <small>(6)</small></div>
+    </div>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>flex-shrink</code> property</h4>
+    <div class="color_blue flex-container">
+        <div class="flex-item no-min-width">1</div>
+        <div class="flex-item no-min-width">2</div>
+        <div class="flex-item no-min-width">3</div>
+        <div class="flex-item no-min-width">4</div>
+        <div class="flex-item no-min-width">5</div>
+        <div class="flex-item no-min-width">6</div>
+        <div class="flex-item no-min-width" style="flex-shrink: 0">7 <small>0</small></div>
+        <div class="flex-item no-min-width">8</div>
+        <div class="flex-item no-min-width">9</div>
+        <div class="flex-item no-min-width">10</div>
+        <div class="flex-item no-min-width">11</div>
+        <div class="flex-item no-min-width">12</div>
+        <div class="flex-item no-min-width">13</div>
+        <div class="flex-item no-min-width">14</div>
+        <div class="flex-item no-min-width">15</div>
+    </div>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>flex-basis</code> property</h4>
+    <div class="color_blue flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item" style="flex-basis: 500px">2 (500px)</div>
+        <div class="flex-item">3</div>
+    </div>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>flex</code> property</h4>
+    <div class="color_blue flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item" style="flex: 0 0 300px">2 (0 0 300px)</div>
+        <div class="flex-item">3</div>
+    </div>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>align-self</code> property</h4>
+    <div class="color_blue flex-container height-200">
+        <div class="flex-item">1</div>
+        <div class="flex-item" style="align-self: center">2 (center)</div>
+        <div class="flex-item">3</div>
+    </div>
+    <hr>
+
+    <h4>Flex container with flex-items and <code>align-self</code> property</h4>
+    <div class="color_blue flex-container height-200">
+        <div class="flex-item">1</div>
+        <div class="flex-item" style="align-self: flex-start">2 (flex-start)</div>
+        <div class="flex-item" style="align-self: flex-end">2 (flex-end)</div>
+        <div class="flex-item">3</div>
+    </div>
+    <hr>
+
+    <h1>Flex Gallery</h1>
+    <div class="color_blue flex-container flex-wrap">
+        <div class="flex-image-column">
+            <img src="https://picsum.photos/1000/700" alt="">
+            <img src="https://picsum.photos/1500/1000" alt="">
+            <img src="https://picsum.photos/800/2000" alt="">
+            <img src="https://picsum.photos/1000/2500" alt="">
+            <img src="https://picsum.photos/1500/1200" alt="">
+            <img src="https://picsum.photos/800/1100" alt="">
+            <img src="https://picsum.photos/800/1500" alt="">
+        </div>
+        <div class="flex-image-column">
+            <img src="https://picsum.photos/1000/900" alt="">
+            <img src="https://picsum.photos/1000/900" alt="">
+            <img src="https://picsum.photos/800/900" alt="">
+            <img src="https://picsum.photos/1200/900" alt="">
+            <img src="https://picsum.photos/1600/900" alt="">
+            <img src="https://picsum.photos/1500/900" alt="">
+            <img src="https://picsum.photos/700/900" alt="">
+        </div>
+        <div class="flex-image-column">
+            <img src="https://picsum.photos/1200/900" alt="">
+            <img src="https://picsum.photos/1500/900" alt="">
+            <img src="https://picsum.photos/1200/800" alt="">
+            <img src="https://picsum.photos/1100/700" alt="">
+            <img src="https://picsum.photos/1200/600" alt="">
+            <img src="https://picsum.photos/1300/800" alt="">
+            <img src="https://picsum.photos/1500/400" alt="">
+        </div>
+        <div class="flex-image-column">
+            <img src="https://picsum.photos/1000/300" alt="">
+            <img src="https://picsum.photos/1000/600" alt="">
+            <img src="https://picsum.photos/1400/800" alt="">
+            <img src="https://picsum.photos/1600/1900" alt="">
+            <img src="https://picsum.photos/2000/700" alt="">
+            <img src="https://picsum.photos/1400/900" alt="">
+            <img src="https://picsum.photos/1500/900" alt="">
+        </div>
+    </div>
+
 </body>
 </html>
