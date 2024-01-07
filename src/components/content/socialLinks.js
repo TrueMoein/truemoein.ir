@@ -44,12 +44,12 @@ const socialLinks = [
   },
   {
     name: 'Mail',
-    link: 'mailto:moein.alizade@gmail.com',
+    link: 'mailto:truemoein@gmail.com',
     icon: <FontAwesomeIcon icon={faEnvelope} />,
   },
   {
     name: 'Phone',
-    link: 'tel:+989301240100',
+    link: 'tel:+989120989415',
     icon: <FontAwesomeIcon icon={faPhone} />,
   },
 ]

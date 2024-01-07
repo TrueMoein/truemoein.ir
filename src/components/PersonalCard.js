@@ -22,7 +22,7 @@ export default function PersonalCard(props) {
       </div>
 
       <footer>
-        Moein Alizadeh, Web developer - © {new Date().getFullYear()}
+        Moein Alizadeh, Front-End Developer - © {new Date().getFullYear()}
       </footer>
     </div>
   )
